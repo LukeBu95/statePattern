@@ -1,8 +1,11 @@
 package swing;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
+import java.io.InputStream;
 import java.net.URL;
 import state.Context;
 import state.State;
@@ -50,9 +53,7 @@ public class Machine extends JFrame {
         setResizable(false);
         setTitle("Snackautomat by Kevin & Lukas");
 
-		URL url = getClass().getResource("vending-machine.png");
-        JLabel background=new JLabel(new ImageIcon(url.getPath()));
-
+        JLabel background=new JLabel(new ImageIcon("vending-machine.png"));
         background.setLayout(null);
 
 		JPanel panel1 = new JPanel();
